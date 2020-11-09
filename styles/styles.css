@@ -55,7 +55,6 @@ table {
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 89px;
     color: white;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
@@ -63,22 +62,23 @@ table {
 
 .title {
     padding: 10px 0 0 10px;
-    width: 30%;
-    height: 89px;
-    display: flex;
-	justify-content: left;
-
 	font-size: 28px;
-	font-weight: 300;
+	font-weight: 400;
 	color: white;
+}
+
+.subtitle {
+    padding: 2px 0 0 10px;
+	font-size: 20px;
+	font-weight: 500;
+	color: rgb(140,185,185);
 }
 
 .title-menu-group {
     position: absolute;
     top: 22px;
     right: 0;
-    height: 100%;
-    width: 40%;
+    width: calc(40% + 200px);
 }
 
 .title-menu {
@@ -91,23 +91,28 @@ table {
 .menu-item {
     flex: 1;
     height: 25px;
-    padding-top: 5px;
+	padding-top: 20px;
+	color: rgb(230,230,230);
     user-select: none;
 }
 
+#portfolio:hover{
+	color: rgb(140,185,185);
+}
+
+#about:hover{
+	color: rgb(140,140,185);
+}
+
+#contact:hover{
+	color: rgb(185,140,140);
+}
+
 .menu-item:hover {
-	padding-top: 4px;
+	padding-top: 19px;
 	font-size: 19px;
-    font-weight: 500;
-}
-
-#first-menu-item {
-    border-radius: 5px 0 0 0;
-}
-
-.title-spacer {
-    display: block;
-    height: 90px;
+	font-weight: 500;
+	color: white;
 }
 
 /* End Header */
@@ -180,14 +185,15 @@ table {
 
 @keyframes portrait {
 	from {opacity: 0;}
-	to {opacity: 1;}
+	to {opacity: .8;}
 }
 
 #portrait {
 	position: absolute;
 	bottom: 0;
 	right: 70px;
-	max-height: calc(100vh - 70px);
+	height: calc(100vh - 80px);
+	opacity: .8;
 	animation-name: portrait;
 	animation-duration: 5s;
 }
