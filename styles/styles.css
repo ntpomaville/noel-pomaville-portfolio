@@ -48,6 +48,69 @@ table {
 }
 
 /* End reset */
+/* Start Header */
+
+.header {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 89px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    padding: 10px 0 0 10px;
+    width: 30%;
+    height: 89px;
+    display: flex;
+	justify-content: left;
+
+	font-size: 28px;
+	font-weight: 300;
+	color: white;
+}
+
+.title-menu-group {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    height: 100%;
+    width: 40%;
+}
+
+.title-menu {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    flex: 1;
+    height: 25px;
+    padding-top: 5px;
+    user-select: none;
+}
+
+.menu-item:hover {
+	padding-top: 4px;
+	font-size: 19px;
+    font-weight: 500;
+}
+
+#first-menu-item {
+    border-radius: 5px 0 0 0;
+}
+
+.title-spacer {
+    display: block;
+    height: 90px;
+}
+
+/* End Header */
 /* Start Body */
 #body {
  background-color: black;
@@ -55,7 +118,7 @@ table {
 
 #intro-div {
 	float: left;
-	padding: 30vh 0 0 20vw;
+	padding: 36vh 0 0 calc(40vw - 300px);
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 }
@@ -63,13 +126,68 @@ table {
 #intro-header {
 	font-size: 30px;
 	padding-bottom: 10px;
+
+}
+
+@keyframes intro-1st {
+	from {
+		opacity: 0;
+		color: rgb(202, 62, 62);
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#intro-1st {
+	display: inline;
+	animation-name: intro-1st;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes intro-2nd {
+	from {
+		opacity: 0;
+		color: rgb(56, 147, 189);
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#intro-2nd {
+	display: inline;
+	animation-name: intro-2nd;
+	animation-duration: 3s;
+	animation-delay: 2s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes intro-content {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
 
 #intro-content {
 	font-size: 20px;
+	animation-name: intro-content;
+	animation-duration: 3s;
+	animation-delay: 4s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes portrait {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
 
 #portrait {
-	float: right;
-	max-height: 100vh;
+	position: absolute;
+	bottom: 0;
+	right: 70px;
+	max-height: calc(100vh - 70px);
+	animation-name: portrait;
+	animation-duration: 5s;
 }

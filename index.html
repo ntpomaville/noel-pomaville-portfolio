@@ -8,16 +8,35 @@
   <link rel="icon" href="profile_image_round.png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  
+
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="fonts/stylesheet.css">
 </head>
 
 <body id="body">
-  <div id="intro-div">
-    <h2 id="intro-header">Hey there, I'm Noel</h2>
-    <p id="intro-content">I make attractive, friendly websites.</p>
+
+  <div class="header">
+    <h1 class="title" style="cursor: pointer;" onclick="window.location='index.html';">Noel Pomaville</h1>
+    <nav class="title-menu-group">
+      <ul class="title-menu">
+        <li class="menu-item" id="first-menu-item" style="cursor: pointer;" onclick="window.location='index.html';">Portfolio</li>
+        <li class="menu-item" style="cursor: pointer;" onclick="window.location='gallery.html';">About</li>
+        <li class="menu-item" style="cursor: pointer;" onclick="window.location='comics.html';">Contact</li>
+      </ul>
+    </nav>
   </div>
-  <img id="portrait" src="noel-shadow-portrait.png">
+
+  <div id="intro-div">
+    <h2 id="intro-header"><p id="intro-1st">Hey there, </p><p id="intro-2nd">I'm Noel</p></h2>
+    <p id="intro-content">I create attractive, friendly websites.</p>
+  </div>
+  <img id="portrait" src="noel-shadow-portrait-slim.png">
 
   <script type="text/javascript" src="scripts/script.js"></script>
 </body>
