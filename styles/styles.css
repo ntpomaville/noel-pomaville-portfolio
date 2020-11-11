@@ -110,6 +110,18 @@ table {
     user-select: none;
 }
 
+@keyframes menu-item-animated {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.menu-item-animated {
+	animation-name: menu-item-animated;
+	animation-duration: 4s;
+	animation-delay: 4.2s;
+	animation-fill-mode: backwards;
+}
+
 #portfolio:hover{
 	color: rgb(140,185,185);
 }
