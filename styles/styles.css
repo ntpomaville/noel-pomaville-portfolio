@@ -73,7 +73,18 @@ table {
     padding: 2px 0 0 10px;
 	font-size: 20px;
 	font-weight: 500;
+}
+
+#subtitle-portfolio {
 	color: rgb(140,185,185);
+}
+
+#subtitle-about {
+	color: rgb(140,140,185)
+}
+
+#subtitle-contact {
+	color: rgb(185,140,140)
 }
 
 .title-menu-group {
