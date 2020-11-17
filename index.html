@@ -13,21 +13,35 @@
 <body id="body">
   <div class="header">
     <h1 class="title" style="cursor: pointer;" onclick="window.location='index.html';">Noel Pomaville</h1>
-    <p class="subtitle" id="subtitle-portfolio">Portfolio</p>
+    <p class="subtitle">Portfolio</p>
     <nav class="title-menu-group">
       <ul class="title-menu">
-        <li class="menu-item menu-item-animated" id="portfolio" style="cursor: pointer;" onclick="window.location='index.html';">Portfolio</li>
-        <li class="menu-item menu-item-animated" id="about" style="cursor: pointer;" onclick="window.location='about.html';">About</li>
-        <li class="menu-item menu-item-animated" id="contact" style="cursor: pointer;" onclick="window.location='contact.html';">Contact</li>
+        <li class="menu-item menu-item-animated" id="portfolio"><a href="#portfolio-section" class="transparent-link">Portfolio</a>Portfolio</li>
+        <li class="menu-item menu-item-animated" id="about"><a href="#about-section" class="transparent-link">About</a>About</li>
+        <li class="menu-item menu-item-animated" id="contact"><a href="#contact-section" class="transparent-link">Contact</a>Contact</li>
       </ul>
     </nav>
   </div>
 
-  <div id="intro-div">
-    <h2 id="intro-header"><p id="intro-1st">Hey there, </p><p id="intro-2nd">I'm Noel</p></h2>
-    <p id="intro-content">I create attractive, friendly websites.</p>
-  </div>
-  <img id="portrait" src="noel-shadow-portrait-transparent.png">
+  <section id="intro-section">
+    <div id="intro-div">
+      <h2 id="intro-header"><p id="intro-1st">Hey there, </p><p id="intro-2nd">I'm Noel</p></h2>
+      <p id="intro-content">I create attractive, friendly websites.</p>
+    </div>
+    <img id="portrait" src="noel-shadow-portrait-transparent.png">
+  </section>
+
+  <section id="portfolio-section">
+    <p>test</p>
+  </section>
+
+  <section id="about-section">
+    <p>test</p>
+  </section>
+
+  <section id="contact-section">
+    <p>test</p>
+  </section>
 
   <script type="text/javascript" src="scripts/script.js"></script>
 </body>

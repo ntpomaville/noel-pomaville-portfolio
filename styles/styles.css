@@ -55,10 +55,13 @@ table {
     position: fixed;
     top: 0;
 	width: 100vw;
-	background-color: black;
+	background-color: rgb(0,0,0,.5);
+	background: linear-gradient(to bottom, rgb(0,0,0,1) 0%, rgb(0,0,0,.5) 70%, rgb(0,0,0,.1) 100%);
+	backdrop-filter: blur(6px);
     color: white;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+	padding-bottom: 10px;
 }
 
 .title {
@@ -73,25 +76,16 @@ table {
     padding: 2px 0 0 10px;
 	font-size: 20px;
 	font-weight: 500;
-}
-
-#subtitle-portfolio {
+	color: rgb(185,140,140);
+	color: rgb(140,140,185);
 	color: rgb(140,185,185);
 }
 
-#subtitle-about {
-	color: rgb(140,140,185)
-}
-
-#subtitle-contact {
-	color: rgb(185,140,140)
-}
-
 .title-menu-group {
-    position: absolute;
+	position: absolute;
     top: 22px;
     right: 0;
-    width: calc(40% + 200px);
+	width: calc(40% + 200px);
 }
 
 .title-menu {
@@ -107,6 +101,7 @@ table {
     height: 25px;
 	padding-top: 20px;
 	color: rgb(230,230,230);
+	font-weight: 500;
     user-select: none;
 }
 
@@ -122,15 +117,18 @@ table {
 	animation-fill-mode: backwards;
 }
 
-#portfolio:hover{
+#portfolio{
+	color: rgb(140,185,185);
 	color: rgb(140,185,185);
 }
 
-#about:hover{
+#about{
+	color: rgb(140,140,185);
 	color: rgb(140,140,185);
 }
 
-#contact:hover{
+#contact{
+	color: rgb(185,140,140);
 	color: rgb(185,140,140);
 }
 
@@ -141,10 +139,21 @@ table {
 	color: white;
 }
 
+.transparent-link {
+	position: absolute;
+	opacity: 0%;
+}
+
 /* End Header */
 /* Start Body */
+
 #body {
  background-color: black;
+}
+
+/* Start Intro */
+#intro-section {
+	height: 100vh;
 }
 
 #intro-div {
@@ -216,11 +225,26 @@ table {
 
 #portrait {
 	position: absolute;
+	z-index: -1;
 	bottom: 0;
 	right: 70px;
 	height: calc(100vh - 130px);
-	opacity: .8;
 	animation-name: portrait;
-	animation-duration: 6s;
+	animation-duration: 8s;
 	background-color: rgb(240,240,240);
+}
+
+/* Start Portfolio */
+#portfolio-section {
+	height: 100vh;
+}
+
+/* Start About */
+#about-section {
+	height: 100vh;
+}
+
+/* Start Contact */
+#contact-section {
+	height: 100vh;
 }
