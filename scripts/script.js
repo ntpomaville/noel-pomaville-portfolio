@@ -57,6 +57,30 @@ window.addEventListener("scroll", () => {
 
 
 //Change text and color of subtitle when scroll hits main section elements
-let portfolioSec = document.getElementById("portfolio-section")
-let aboutSec = document.getElementById("about-section")
-let contactSec = document.getElementById("contact-section")
+let subtitle = document.getElementById("subtitle")
+let body = document.getElementById("body")
+let bodyHeight = body.scrollHeight;
+
+body.onscroll = function() {
+    let currentHeight = window.pageYOffset;
+
+    if(currentHeight >= 0 && currentHeight <= bodyHeight / 4) {
+        subtitle.textContent = "Web Development & Design";
+        subtitle.style.color = "grey";
+    }
+
+    if(currentHeight >= bodyHeight / 4 && currentHeight <= bodyHeight / 2) {
+        subtitle.textContent = "Portfolio";
+        subtitle.style.color = "rgb(140,185,185)";
+    }
+
+    if(currentHeight >= bodyHeight / 2 && currentHeight <= bodyHeight / 1.333334) {
+        subtitle.textContent = "About";
+        subtitle.style.color = "rgb(140,140,185)";
+    }
+
+    if(currentHeight >= bodyHeight / 1.333334 && currentHeight <= bodyHeight) {
+        subtitle.textContent = "Contact";
+        subtitle.style.color = "rgb(185,140,140)";
+    }
+}

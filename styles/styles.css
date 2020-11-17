@@ -72,13 +72,11 @@ table {
 	color: white;
 }
 
-.subtitle {
+#subtitle {
     padding: 2px 0 0 10px;
 	font-size: 20px;
 	font-weight: 500;
-	color: rgb(185,140,140);
-	color: rgb(140,140,185);
-	color: rgb(140,185,185);
+	color: grey;
 }
 
 .title-menu-group {
