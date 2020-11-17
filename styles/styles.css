@@ -76,7 +76,7 @@ table {
     padding: 2px 0 0 10px;
 	font-size: 20px;
 	font-weight: 500;
-	color: grey;
+	color: rgb(140,167,185);
 }
 
 .title-menu-group {
@@ -117,16 +117,13 @@ table {
 
 #portfolio{
 	color: rgb(140,185,185);
-	color: rgb(140,185,185);
 }
 
 #about{
 	color: rgb(140,140,185);
-	color: rgb(140,140,185);
 }
 
 #contact{
-	color: rgb(185,140,140);
 	color: rgb(185,140,140);
 }
 
@@ -204,7 +201,10 @@ table {
 }
 
 @keyframes intro-content {
-	from {opacity: 0;}
+	from {
+		opacity: 0;
+		color: rgb(111, 90, 201)
+	}
 	to {opacity: 1;}
 }
 
@@ -218,7 +218,7 @@ table {
 
 @keyframes portrait {
 	from {opacity: 0;}
-	to {opacity: .8;}
+	to {opacity: 1;}
 }
 
 #portrait {
@@ -230,6 +230,7 @@ table {
 	animation-name: portrait;
 	animation-duration: 8s;
 	background-color: rgb(240,240,240);
+	background: linear-gradient(to bottom, rgb(200,255,255) 0%, rgb(200,200,255) 30%, rgb(200,200,255) 40%, rgb(255,210,200) 88%, rgb(200,200,255) 95%, rgb(200,255,255) 100%);
 }
 
 /* Start Portfolio */

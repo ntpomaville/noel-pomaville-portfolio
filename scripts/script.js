@@ -5,41 +5,28 @@ let contact = document.getElementById("contact")
 let portrait = document.getElementById("portrait")
 
 portfolio.addEventListener("mouseover", function( event ) {
-    portrait.style.backgroundColor = "rgb(200,255,255)";
+    portrait.style.background = "rgb(200,255,255)";
 }, false);
 
 portfolio.addEventListener("mouseout", function( event ) {
-    portrait.style.backgroundColor = "rgb(240,240,240)";
+    portrait.style.background = "linear-gradient(to bottom, rgb(200,255,255) 0%, rgb(200,200,255) 30%, rgb(200,200,255) 40%, rgb(255,210,200) 88%, rgb(200,200,255) 95%, rgb(200,255,255) 100%)";
 }, false);
 
 about.addEventListener("mouseover", function( event ) {
-    portrait.style.backgroundColor = "rgb(200,200,255)";
+    portrait.style.background = "rgb(200,200,255)";
 }, false);
 
 about.addEventListener("mouseout", function( event ) {
-    portrait.style.backgroundColor = "rgb(240,240,240)";
+    portrait.style.background = "linear-gradient(to bottom, rgb(200,255,255) 0%, rgb(200,200,255) 30%, rgb(200,200,255) 40%, rgb(255,210,200) 88%, rgb(200,200,255) 95%, rgb(200,255,255) 100%)";
 }, false);
 
 contact.addEventListener("mouseover", function( event ) {
-    portrait.style.backgroundColor = "rgb(255,210,200)";
+    portrait.style.background = "rgb(255,210,200)";
 }, false);
 
 contact.addEventListener("mouseout", function( event ) {
-    portrait.style.backgroundColor = "rgb(240,240,240)";
+    portrait.style.background = "linear-gradient(to bottom, rgb(200,255,255) 0%, rgb(200,200,255) 30%, rgb(200,200,255) 40%, rgb(255,210,200) 88%, rgb(200,200,255) 95%, rgb(200,255,255) 100%)";
 }, false);
-
-
-//Stop all animations on scroll
-window.onscroll = function (e) {  
-    portfolio.style.animationDelay = "0s";
-    portfolio.style.animationDuration = "0s";
-    about.style.animationDelay = "0s";
-    about.style.animationDuration = "0s";
-    contact.style.animationDelay = "0s";
-    contact.style.animationDuration = "0s";
-    portrait.style.animationDelay = "0s";
-    portrait.style.animationDuration = "0s";
-}
 
 
 //Fade out portrait as scrolled
@@ -57,6 +44,7 @@ window.addEventListener("scroll", () => {
 
 
 //Change text and color of subtitle when scroll hits main section elements
+//Stop all animations when scrolling starts
 let subtitle = document.getElementById("subtitle")
 let body = document.getElementById("body")
 let bodyHeight = body.scrollHeight;
@@ -64,9 +52,18 @@ let bodyHeight = body.scrollHeight;
 body.onscroll = function() {
     let currentHeight = window.pageYOffset;
 
+    portfolio.style.animationDelay = "0s";
+    portfolio.style.animationDuration = "0s";
+    about.style.animationDelay = "0s";
+    about.style.animationDuration = "0s";
+    contact.style.animationDelay = "0s";
+    contact.style.animationDuration = "0s";
+    portrait.style.animationDelay = "0s";
+    portrait.style.animationDuration = "0s";
+
     if(currentHeight >= 0 && currentHeight <= bodyHeight / 4) {
-        subtitle.textContent = "Web Development & Design";
-        subtitle.style.color = "grey";
+        subtitle.textContent = "Web Developer";
+        subtitle.style.color = "rgb(140,167,185)";
     }
 
     if(currentHeight >= bodyHeight / 4 && currentHeight <= bodyHeight / 2) {
