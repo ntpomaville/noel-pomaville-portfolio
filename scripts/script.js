@@ -48,6 +48,7 @@ window.addEventListener("scroll", () => {
 let subtitle = document.getElementById("subtitle")
 let body = document.getElementById("body")
 let bodyHeight = body.scrollHeight;
+let viewWidth = window.innerWidth;
 
 body.onscroll = function() {
     let currentHeight = window.pageYOffset;
@@ -61,23 +62,25 @@ body.onscroll = function() {
     portrait.style.animationDelay = "0s";
     portrait.style.animationDuration = "0s";
 
-    if(currentHeight >= 0 && currentHeight <= bodyHeight / 4) {
-        subtitle.textContent = "Web Developer";
-        subtitle.style.color = "rgb(140,167,185)";
-    }
+    if(viewWidth <= 745) {
+        if(currentHeight >= 0 && currentHeight <= bodyHeight / 4) {
+            subtitle.textContent = "Web Developer";
+            subtitle.style.color = "rgb(140,167,185)";
+        }
 
-    if(currentHeight >= bodyHeight / 4 && currentHeight <= bodyHeight / 2) {
-        subtitle.textContent = "Portfolio";
-        subtitle.style.color = "rgb(140,185,185)";
-    }
+        if(currentHeight >= bodyHeight / 4 && currentHeight <= bodyHeight / 2) {
+            subtitle.textContent = "Portfolio";
+            subtitle.style.color = "rgb(140,185,185)";
+        }
 
-    if(currentHeight >= bodyHeight / 2 && currentHeight <= bodyHeight / 1.333334) {
-        subtitle.textContent = "About";
-        subtitle.style.color = "rgb(140,140,185)";
-    }
+        if(currentHeight >= bodyHeight / 2 && currentHeight <= bodyHeight / 1.333334) {
+            subtitle.textContent = "About";
+            subtitle.style.color = "rgb(140,140,185)";
+        }
 
-    if(currentHeight >= bodyHeight / 1.333334 && currentHeight <= bodyHeight) {
-        subtitle.textContent = "Contact";
-        subtitle.style.color = "rgb(185,140,140)";
+        if(currentHeight >= bodyHeight / 1.333334 && currentHeight <= bodyHeight) {
+            subtitle.textContent = "Contact";
+            subtitle.style.color = "rgb(185,140,140)";
+        }
     }
 }
