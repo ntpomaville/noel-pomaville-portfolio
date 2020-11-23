@@ -58,9 +58,7 @@ table {
 	background-color: rgb(0,0,0,.5);
 	background: linear-gradient(to bottom, rgb(0,0,0,1) 0%, rgb(0,0,0,.5) 70%, rgb(0,0,0,.1) 100%);
 	backdrop-filter: blur(6px);
-    color: white;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
 	padding-bottom: 10px;
 }
 
@@ -69,7 +67,6 @@ table {
     padding: 10px 0 0 10px;
 	font-size: 28px;
 	font-weight: 400;
-	color: white;
 }
 
 #subtitle {
@@ -132,7 +129,6 @@ table {
 	padding-top: 19px;
 	font-size: 19px;
 	font-weight: 500;
-	color: white;
 }
 
 .transparent-link {
@@ -146,6 +142,28 @@ table {
 #body {
  background-color: black;
  font-family: 'Montserrat', sans-serif;
+ color: white;
+}
+
+a:link {
+    color: rgb(140,185,185);
+    
+}
+
+a:visited {
+    color: rgb(140,140,185);
+}
+
+a:hover {
+    color: rgb(185,140,140);
+}
+
+a:focus {
+    color: rgb(185,140,140);
+}
+
+a:active {
+    color: rgb(185,140,140);
 }
 
 /* Start Intro */
@@ -156,7 +174,6 @@ table {
 #intro-div {
 	float: left;
 	padding: 36vh 0 0 calc(40vw - 300px);
-	color: white;
 }
 
 #intro-header {
@@ -245,12 +262,38 @@ table {
 
 .side-title {
 	position: relative;
-	top: 37%;
+	top: 15%;
 	left: 10px;
-	-ms-transform: translate(0%, -50%);
-	transform: translate(0%, -50%);
 	writing-mode: vertical-rl;
 	font-size: 56px;
+}
+
+#portfolio-pic-container {
+	text-align: center;
+	position: relative;
+	top: 0;
+	left: 50%;
+	-ms-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+}
+
+.portfolio-subheader {
+	font-size: 22px;
+	font-weight: 500;
+	padding: 35px 0 8px 0;
+}
+
+.img-link {
+	filter: brightness(90%);
+	max-height: 200px;
+	border: 2px solid rgb(140,185,185,0%);
+	border-radius: 8px;
+}
+
+.img-link:hover {
+	filter: brightness(100%);
+	border: 2px solid rgb(140,185,185);
+	
 }
 
 /* Start About */
@@ -265,15 +308,14 @@ table {
 #about-content-container {
 	position: relative;
 	max-width: 580px;
-	top: 50%;
+	top: 0;
 	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
 
 }
 
 #about-content {
-	color: white;
     font-size: 16px;
 	line-height: 24px;
 }
@@ -285,7 +327,6 @@ table {
 
 .about-list {
 	display: inline-block;
-	color: white;
     font-size: 18px;
 	line-height: 24px;
 	width: 50%;
@@ -308,10 +349,24 @@ table {
 
 }
 
+#contact-content-container {
+	position: relative;
+	width: calc(25vw + 280px);
+	top: 0;
+	left: 50%;
+	-ms-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+	text-align: center;
+}
+
+#contact-intro {
+	padding-bottom: 0px;
+}
+
 #contact-social-media-links {
     display: block;
     margin: 50px auto 50px auto;
-    width: calc(25vw + 280px);
+    width: 100%;
     min-width: 280px;
     padding: 11px 0 11px 0;
 }
@@ -335,6 +390,10 @@ table {
 
 .contact-social-media-icon:hover {
     opacity: 100%;
+}
+
+#resume-paragraph {
+	padding-top: 200px;
 }
 
 .footer {
