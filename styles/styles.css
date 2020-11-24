@@ -73,7 +73,6 @@ table {
     padding: 2px 0 0 10px;
 	font-size: 20px;
 	font-weight: 500;
-	color: rgb(140,167,185);
 	color: rgb(155,155,170);
 }
 
@@ -146,7 +145,8 @@ table {
 }
 
 a:link {
-    color: rgb(140,185,185);
+	color: rgb(140,185,185);
+	text-decoration: none;						
     
 }
 
@@ -271,10 +271,12 @@ a:active {
 #portfolio-pic-container {
 	text-align: center;
 	position: relative;
-	top: 0;
+	max-width: 640px;
+	top: -14%;
 	left: 50%;
 	-ms-transform: translate(-50%, 0%);
-	transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);border-top: 1px solid rgb(140,185,185);
+	padding-top: 1px;
 }
 
 .portfolio-subheader {
@@ -285,7 +287,7 @@ a:active {
 
 .img-link {
 	filter: brightness(90%);
-	max-height: 200px;
+	max-width: 28%;
 	border: 2px solid rgb(140,185,185,0%);
 	border-radius: 8px;
 }
@@ -293,7 +295,10 @@ a:active {
 .img-link:hover {
 	filter: brightness(100%);
 	border: 2px solid rgb(140,185,185);
-	
+}
+
+#repository-link-para {
+	margin-top: 40px;
 }
 
 /* Start About */
@@ -308,16 +313,18 @@ a:active {
 #about-content-container {
 	position: relative;
 	max-width: 580px;
-	top: 0;
+	top: 0%;
 	left: 50%;
 	-ms-transform: translate(-50%, 0%);
 	transform: translate(-50%, 0%);
-
+	border-top: 1px solid rgb(140, 140, 185);
+	padding: 30px 0 0 80px;
 }
 
 #about-content {
-    font-size: 16px;
-	line-height: 24px;
+    font-size: 14px;
+	line-height: 28px;
+	font-weight: 500;
 }
 
 #about-list-container {
@@ -328,16 +335,46 @@ a:active {
 .about-list {
 	display: inline-block;
     font-size: 18px;
-	line-height: 24px;
+	line-height: 40px;
 	width: 50%;
+	color: rgb(179, 71, 71);
 }
 
 #about-list-right {
 	float: right;
+	color: rgb(94, 185, 185);
 }
 
 .about-list-item {
-	font-size: 16px;
+	padding-left: 36px;
+	color: white;
+	font-size: 14px;
+	background-image: url("/bullet.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px;
+}
+
+#resume-paragraph {
+	float: right;
+	padding-top: 20px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+#resume-link {
+	display: inline;
+	color: black;
+	font-weight: 500;
+	background-color: rgb(226, 119, 119);
+	border-radius: 80px;
+	padding: 3px 15px 3px 15px;
+	margin-left: 5px;
+	font-size: 14px;
+}
+
+#resume-link:hover {
+	background-color: rgb(219, 148, 148);
 }
 
 /* Start Contact */
@@ -351,12 +388,14 @@ a:active {
 
 #contact-content-container {
 	position: relative;
-	width: calc(25vw + 280px);
-	top: 0;
+	max-width: 640px;
+	top: -7%;
 	left: 50%;
 	-ms-transform: translate(-50%, 0%);
 	transform: translate(-50%, 0%);
 	text-align: center;
+	border-top: 1px solid rgb(185,140,140);
+	padding-top: 51px;
 }
 
 #contact-intro {
@@ -365,6 +404,7 @@ a:active {
 
 #contact-social-media-links {
     display: block;
+	width: calc(25vw + 280px);
     margin: 50px auto 50px auto;
     width: 100%;
     min-width: 280px;
@@ -390,10 +430,6 @@ a:active {
 
 .contact-social-media-icon:hover {
     opacity: 100%;
-}
-
-#resume-paragraph {
-	padding-top: 200px;
 }
 
 .footer {
