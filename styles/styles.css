@@ -270,9 +270,9 @@ a:active {
 
 #portfolio-pic-container {
 	text-align: center;
-	position: relative;
+	position: absolute;
 	max-width: 640px;
-	top: -14%;
+	top: 25%;
 	left: 50%;
 	-ms-transform: translate(-50%, 0%);
 	transform: translate(-50%, 0%);border-top: 1px solid rgb(140,185,185);
@@ -311,12 +311,12 @@ a:active {
 }
 
 #about-content-container {
-	position: relative;
+	position: absolute;
 	max-width: 580px;
-	top: 0%;
+	top: 50%;
 	left: 50%;
-	-ms-transform: translate(-50%, 0%);
-	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	border-top: 1px solid rgb(140, 140, 185);
 	padding: 30px 0 0 80px;
 }
@@ -387,12 +387,12 @@ a:active {
 }
 
 #contact-content-container {
-	position: relative;
+	position: absolute;
 	max-width: 640px;
-	top: -7%;
+	top: 50%;
 	left: 50%;
-	-ms-transform: translate(-50%, 0%);
-	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	text-align: center;
 	border-top: 1px solid rgb(185,140,140);
 	padding-top: 51px;
