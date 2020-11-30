@@ -63,7 +63,8 @@ table {
 }
 
 .title {
-	width: 215px;
+	display: inline-block;
+	width: 50%;
     padding: 10px 0 0 10px;
 	font-size: 28px;
 	font-weight: 400;
@@ -135,6 +136,31 @@ table {
 	opacity: 0%;
 }
 
+@media screen and (max-width: 655px) {
+	.header {
+		padding-bottom: 0;
+	}
+
+	.title {
+		font-size: 20px;
+		width: 100%;
+		text-align: center;
+		padding: 7px 0 0 0;
+	}
+    #subtitle {
+		width: 100%;
+		text-align: center;
+		font-size: 13px;
+		padding: 0;
+	}
+
+	.title-menu-group {
+		position: relative;
+		display: inline;
+		top: -3px;
+	}
+}
+
 /* End Header */
 /* Start Body */
 
@@ -177,9 +203,8 @@ a:active {
 }
 
 #intro-header {
-	font-size: 30px;
 	padding-bottom: 10px;
-
+	font-size: 30px;
 }
 
 @keyframes intro-1st {
@@ -251,6 +276,33 @@ a:active {
 	background: linear-gradient(to bottom, rgb(200,255,255) 0%, rgb(200,200,255) 30%, rgb(200,200,255) 40%, rgb(255,210,200) 88%, rgb(200,200,255) 95%, rgb(200,255,255) 100%);
 }
 
+@media screen and (max-width: 800px) {
+	#portrait {
+		right: 5px;
+	}
+
+	#intro-div {
+		padding-left: 20px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	#intro-2nd {
+		display: block;
+	}
+
+	#intro-content {
+		font-size: 16px;
+		width: 200px;
+		line-height: 20px;
+		padding-top: 20px;
+	}
+
+	#portrait {
+		height: 85vh;
+	}
+}
+
 /* Start Portfolio */
 #portfolio-section {
 	position: relative;
@@ -268,7 +320,11 @@ a:active {
 	font-size: 56px;
 }
 
-test
+@media screen and (max-width: 620px) {
+	.side-title {
+		transform: translate(-999px, 0px);
+	}
+}
 
 #portfolio-pic-container {
 	text-align: center;
@@ -303,6 +359,20 @@ test
 	margin-top: 40px;
 }
 
+@media screen and (max-width: 620px) {
+	#portfolio-pic-container {
+		width: 85vw;
+		top: 17%;
+	}
+	.portfolio-subheader {
+		font-size: 18px;
+	}
+
+	.img-link {
+		max-width: 30%;
+	}
+}
+
 /* Start About */
 #about-section {
 	position: relative;
@@ -315,6 +385,7 @@ test
 #about-content-container {
 	position: absolute;
 	max-width: 580px;
+	min-width: 400px;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
@@ -377,6 +448,28 @@ test
 
 #resume-link:hover {
 	background-color: rgb(219, 148, 148);
+}
+
+@media screen and (max-width: 620px) {
+	#about-content-container {
+		margin-top: 28px;
+		padding: 12px 0 0 0;
+		min-width: 85vw;
+		max-height: 100vh;
+	}
+
+	#about-content {
+		font-size: 1.5vh;
+		line-height: 2.4vh;
+	}
+
+	.about-list {
+		line-height: 28px;
+	}
+
+	.about-list-item {
+		font-size: 1.8vh;
+	}
 }
 
 /* Start Contact */
