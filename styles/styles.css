@@ -162,7 +162,8 @@ table {
 	}
 
 	.transparent-link {
-		
+		top: 4px;
+		height: 40px;
 	}
 }
 
@@ -308,12 +309,28 @@ a:active {
 	}
 }
 
+@media screen and (orientation: landscape) and (max-height: 850px) {
+	#portrait {
+		height: calc(105vh - 85px);
+		right: 70px;
+	}
+
+	#intro-2nd {
+		display: inline;
+	}
+
+	#intro-content {
+		font-size: 20px;
+		width: 100%;
+	}
+}
+
 /* Start Portfolio */
 #portfolio-section {
 	position: relative;
 	background-color: rgb(30,30,30);
 	background: linear-gradient(to bottom, rgb(0,0,0) 0%, rgb(10,10,10) 12%);
-	padding: 26vh 0 10vh 0;
+	padding: 25vh 0 10vh 0;
 }
 
 .side-title {
@@ -420,7 +437,7 @@ a:active {
 	padding-left: 36px;
 	color: white;
 	font-size: 14px;
-	background-image: url("/bullet.svg");
+	background-image: url(/images/bullet.svg);
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 20px;
