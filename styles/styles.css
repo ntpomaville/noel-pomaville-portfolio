@@ -48,6 +48,36 @@ table {
 }
 
 /* End reset */
+/* Start Body */
+
+#body {
+	background-color: black;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+   }
+   
+   a:link {
+	   color: rgb(140,185,185);
+	   text-decoration: none;						
+	   
+   }
+   
+   a:visited {
+	   color: rgb(140,140,185);
+   }
+   
+   a:hover {
+	   color: rgb(185,140,140);
+   }
+   
+   a:focus {
+	   color: rgb(185,140,140);
+   }
+   
+   a:active {
+	   color: rgb(185,140,140);
+   }
+   
 /* Start Header */
 
 .header {
@@ -64,17 +94,18 @@ table {
 
 .title {
 	display: inline-block;
-	width: 50%;
     padding: 10px 0 0 10px;
 	font-size: 28px;
 	font-weight: 400;
+	user-select: none;
 }
 
 #subtitle {
-    padding: 2px 0 0 10px;
+    padding: 2px 0 0 0;
 	font-size: 20px;
 	font-weight: 500;
 	color: rgb(155,155,170);
+	user-select: none;
 }
 
 .title-menu-group {
@@ -168,36 +199,6 @@ table {
 }
 
 /* End Header */
-/* Start Body */
-
-#body {
- background-color: black;
- font-family: 'Montserrat', sans-serif;
- color: white;
-}
-
-a:link {
-	color: rgb(140,185,185);
-	text-decoration: none;						
-    
-}
-
-a:visited {
-    color: rgb(140,140,185);
-}
-
-a:hover {
-    color: rgb(185,140,140);
-}
-
-a:focus {
-    color: rgb(185,140,140);
-}
-
-a:active {
-    color: rgb(185,140,140);
-}
-
 /* Start Intro */
 #intro-section {
 	height: 100vh;
@@ -553,3 +554,5 @@ a:active {
 	font-size: 12px;
 	padding-top: 6px;
 }
+/*End Contact*/
+/*End Body*/
