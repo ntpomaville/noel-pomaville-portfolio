@@ -438,7 +438,7 @@ table {
 	padding-left: 36px;
 	color: white;
 	font-size: 14px;
-	background-image: url(/images/bullet.svg);
+	background-image: url(../images/bullet.svg);
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 20px;

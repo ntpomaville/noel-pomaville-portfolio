@@ -69,7 +69,7 @@ body.onscroll = function() {
 //Fill remainder of screen in Contact section on load/resize
 let contactSection = document.getElementById("contact-section")
 let contactContainer = document.getElementById("contact-content-container")
-let contactBottomFill = window.innerHeight - contactContainer.offsetHeight - (window.innerHeight * .26) -30;
+let contactBottomFill = window.innerHeight - contactContainer.offsetHeight - (window.innerHeight * .26) -50;
 contactSection.style.paddingBottom = contactBottomFill + "px";
 
 window.onresize = function() {
